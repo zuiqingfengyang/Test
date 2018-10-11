@@ -1,0 +1,6 @@
+#!/bin/bash
+#jmx=$(ls -lt /opt/qa_test/ | grep *.jmx | head -n 1 |awk '{print $9}')
+
+jmx=$(ls -lt /opt/qa_test/*.jmx | head -n 1 |awk '{print $9}')
+
+echo $jmx
